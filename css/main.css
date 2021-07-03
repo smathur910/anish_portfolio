@@ -61,11 +61,18 @@ html {
 /* MAIN SECTION */
 
 .wrapper {
+    width: 100%;
+    position: relative;
+}
+
+.container {
     position: relative;
     display: flex;
     width: 100%;
-    padding: 0 60px;
-    margin: 84px 0;
+    padding: 0 125px;
+    margin: 70px 0 0 0;
+    justify-content: space-around;
+    align-items: flex-start;
 }
 
 .main-containt {
@@ -88,14 +95,124 @@ html {
     color: var(--violet);
 }
 
-.tagline h1 {
+.tagline {
     position: relative;
-    left: 60px;
+}
+
+.tagline h1 {
     font-size: var(--small);
     color: var(--orange);
+    text-align: center;
 }
 
 .avater_img img {
     width: 388px;
     height: 388px;
+}
+
+.about_containt {
+    width: 360px;
+    margin: 26px 0px;
+}
+
+.about_containt p {
+    font-size: var(--small);
+    color: var(--primary-red);
+    text-align: justify;
+}
+
+.skills h1 {
+    font-size: var(--regular);
+    color: var(--blue);
+    text-align: left;
+}
+
+.skills>.tech_logo {
+    display: flex;
+    align-content: center;
+    justify-content: flex-start;
+    position: relative;
+    top: 26px;
+}
+
+.tech_logo img {
+    width: 28px;
+    height: 28px;
+    margin: 0 3px;
+}
+
+.footer_text {
+    position: relative;
+}
+
+.footer_text p {
+    font-size: var(--paragraph);
+    text-align: center;
+    font-weight: 600;
+}
+
+.footer_text p span:nth-child(1) {
+    color: var(--blue);
+}
+
+.footer_text p span:nth-child(2) {
+    color: var(--orange);
+}
+
+.footer_text p span:nth-child(3) {
+    color: var(--primary-red);
+}
+
+
+/* Customize website's scrollbar like Mac OS
+Not supports in Firefox and IE */
+
+
+/* total width */
+
+.scrollbar::-webkit-scrollbar {
+    background-color: #fff;
+    width: 16px
+}
+
+
+/* background of the scrollbar except button or resizer */
+
+.scrollbar::-webkit-scrollbar-track {
+    background-color: #fff
+}
+
+.scrollbar::-webkit-scrollbar-track:hover {
+    background-color: #f4f4f4
+}
+
+
+/* scrollbar itself */
+
+.scrollbar::-webkit-scrollbar-thumb {
+    background-color: #babac0;
+    border-radius: 16px;
+    border: 5px solid #fff
+}
+
+.scrollbar::-webkit-scrollbar-thumb:hover {
+    background-color: #a0a0a5;
+    border: 4px solid #f4f4f4
+}
+
+
+/* set button(top and bottom of the scrollbar) */
+
+.scrollbar::-webkit-scrollbar-button {
+    display: none
+}
+
+
+/* div box */
+
+.scrollbar {
+    height: 75vh;
+    min-width: 150px;
+    background: #fff;
+    overflow-y: scroll
 }

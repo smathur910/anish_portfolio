@@ -9,6 +9,6 @@ window.onload = function() {
     showText('delayedText2', 2);
     showText('delayedText3', 3);
     showText('delayedText4', 4);
-    showText('delayedText5', 5);
-    showText('delayedText6', 6);
+    // showText('delayedText5', 5);
+    // showText('delayedText6', 6);
 }

@@ -55,6 +55,7 @@ html {
     content: '.me';
     font-size: var(--regular);
     color: var(--primary-red);
+    -webkit-animation: colorchange 20s infinite alternate;
 }
 
 
@@ -85,9 +86,19 @@ html {
     left: 23px;
 }
 
+.welcome_text {
+    opacity: 0;
+    transition: opacity 0.6s;
+}
+
 .welcome_text h1 {
     font-size: var(--medium);
     color: var(--orange);
+}
+
+.name_text {
+    opacity: 0;
+    transition: opacity 0.6s;
 }
 
 .name_text h1 {
@@ -97,12 +108,19 @@ html {
 
 .tagline {
     position: relative;
+    opacity: 0;
+    transition: opacity 0.6s;
 }
 
 .tagline h1 {
     font-size: var(--small);
     color: var(--orange);
     text-align: center;
+}
+
+.about-me {
+    opacity: 0;
+    transition: opacity 0.6s;
 }
 
 .avater_img img {
@@ -119,6 +137,11 @@ html {
     font-size: var(--small);
     color: var(--primary-red);
     text-align: justify;
+}
+
+.skills {
+    opacity: 0;
+    transition: opacity 0.6s;
 }
 
 .skills h1 {
@@ -273,5 +296,41 @@ Not supports in Firefox and IE */
     }
     100% {
         opacity: 1;
+    }
+}
+
+@-webkit-keyframes colorchange {
+    0% {
+        color: var(--primary-red);
+    }
+    10% {
+        color: var(--violet);
+    }
+    20% {
+        color: var(--blue);
+    }
+    30% {
+        color: var(--orange);
+    }
+    40% {
+        color: var(--primary-red);
+    }
+    50% {
+        color: var(--primary-red);
+    }
+    60% {
+        color: var(--violet);
+    }
+    70% {
+        color: var(--blue);
+    }
+    80% {
+        color: var(--orange);
+    }
+    90% {
+        color: var(--orange);
+    }
+    100% {
+        color: var(--primary-red);
     }
 }
